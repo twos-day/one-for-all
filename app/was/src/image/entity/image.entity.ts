@@ -4,7 +4,7 @@ import { UserModel } from '@/user/entities/user.entity';
 import { Column, Entity, ManyToMany, ManyToOne } from 'typeorm';
 import { TwosdayPostModel } from '@/twosday/post/entity/post.entity';
 
-@Entity()
+@Entity('images')
 export class ImageModel extends BaseModel {
   @ManyToOne(() => UserModel, (user) => user.images, { nullable: false })
   user: UserModel;

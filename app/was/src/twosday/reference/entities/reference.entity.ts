@@ -1,7 +1,7 @@
 import { BaseModel } from '@/common/entity/base.entity';
 import { Column, Entity } from 'typeorm';
 
-@Entity('twosday_reference')
+@Entity('references')
 export class TwosdayReferenceModel extends BaseModel {
   @Column()
   title: string;

@@ -4,7 +4,7 @@ import { BaseModel } from 'src/common/entity/base.entity';
 import { UserModel } from 'src/user/entities/user.entity';
 import { Column, Entity, JoinTable, ManyToMany, ManyToOne } from 'typeorm';
 
-@Entity('twosday_post_model')
+@Entity('posts')
 export class TwosdayPostModel extends BaseModel {
   @ManyToOne(() => UserModel, (user) => user.posts, { nullable: false })
   author: UserModel;

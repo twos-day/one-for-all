@@ -7,7 +7,7 @@ import { Column, Entity, OneToMany } from 'typeorm';
 import { AccountType } from '../const/account-type.const';
 import { StatusEnum } from '../const/status.const';
 
-@Entity()
+@Entity('users')
 export class UserModel extends BaseModel {
   @Column({ length: 20 })
   @ApiProperty()

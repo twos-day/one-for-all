@@ -47,7 +47,7 @@ import { CustomClassSerializerInterceptor } from './common/intercepter/class-ser
       password: process.env.DB_PASSWORD,
       database: process.env.DB_DATABASE,
       entities: [__dirname + '/**/*.entity.{js,ts}'],
-      synchronize: process.env.NODE_ENV === 'local',
+      synchronize: false,
     }),
     UserModule,
     AuthModule,
