@@ -10,10 +10,11 @@
     "web:build": "pnpm --filter web build",
     "start:local": "pnpm --filter was start:local",
     "start:prod": "pnpm --filter was start:prod",
-    "both:build" :"pnpm --filter was --filter web build"
+    "both:build": "pnpm --filter was --filter web build"
   },
   "dependencies": {
     "@types/uuid": "^9.0.8",
+    "axios": "^1.20.0",
     "cross-env": "^7.0.3",
     "date-fns": "^3.6.0",
     "date-fns-tz": "^3.1.3",

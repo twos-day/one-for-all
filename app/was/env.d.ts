@@ -36,6 +36,10 @@ declare global {
       // MAIL
       readonly NAVER_USER: string;
       readonly NAVER_PASSWORD: string;
+
+      // CHZZK
+      readonly CHZZK_CLIENT_ID: string;
+      readonly CHZZK_CLIENT_SECRET: string;
     }
   }
 }

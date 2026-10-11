@@ -24,6 +24,7 @@ import { LogService } from './log/log.service';
 import { TwosdayModule } from './twosday/twosday.module';
 import { MailModule } from './mail/mail.module';
 import { CustomClassSerializerInterceptor } from './common/intercepter/class-serializer.intercepter';
+import { ChzzkModule } from './chzzk/chzzk.module';
 
 @Module({
   imports: [
@@ -57,6 +58,7 @@ import { CustomClassSerializerInterceptor } from './common/intercepter/class-ser
     LogModule,
     MailModule,
     TwosdayModule,
+    ChzzkModule,
   ],
   controllers: [AppController],
   providers: [
